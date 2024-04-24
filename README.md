@@ -51,10 +51,9 @@ How to write my program?
 
 How to use my program? 
 
-  Open your Python program and run the script
-  Enter a unique expression in the format provided ('sin(2x) + 1') when asked. Trigonometric functions such as "sin," "cos," or "tan" can be selected, and their variables (such as "2x") can be specified 
-  Aftering entering the expression,
-  Based on the provided expression, the code will create and display a plot of the function that illustrates the behavior of the function throughout the range of x-values from from k - a to k + a. The plot will be titled "the function(x)" and will include the function name 
-  To understand the behavior of the function, including its magnitude, frequency, phase shift, and vertical shift, analyze the plotted graph
+  1. Open your Python program and run the script
+  2. Enter a unique expression in the format provided ('sin(2x) + 1') when asked. Trigonometric functions such as "sin," "cos," or "tan" can be selected, and their variables (such as "2x") can be specified 
+  3. Aftering entering the expression,
+  4. Based on the provided expression, the code will create and display a plot of the function that illustrates the behavior of the function throughout the range of x-values from from k - a to k + a. The plot will be titled "the function(x)" and will include the function name. To understand the behavior of the function, including its magnitude, frequency, phase shift, and vertical shift, analyze the plotted graph
   
   
