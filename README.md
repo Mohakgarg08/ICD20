@@ -10,7 +10,6 @@ ICS3U Course
 libraries 
     •math
     •matplotlib
-    •matplotlib
     •numpy
 ```
 #### Reference
@@ -27,7 +26,7 @@ Sample:  `2sin(2x+7)-4`
 
 2. User is inputting its expression which is then split at the **open parenthesis**. Which will look like this `['2sin', '4 x -5)+8']`
 
-3. **second = expression[1].split(")").** This code is splitting the expression further at the **closed parenthesis indexed at [1] in the list.** This is what it looks like **`['2sin', '4 x -5)+8'] ['4 x -5', '+8']`**
+3. **second = expression[1].split(")").** This code is splitting the expression further at the **closed parenthesis indexed at [1] in the list.** This is what it looks like **`['2sin', '4 x -5)+8'] ['4 x -5, '+8']`**
 
 4. **`third = second[0].split("x").`** This code is splitting the expression further at **`x`** indexed at **`[0]` in the second list. This is what it will look like **`['2sin', '4 x -5)+8'] ['4 x -5', '+8'] ['4 ', ' -5']`**
 
