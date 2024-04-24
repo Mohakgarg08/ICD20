@@ -3,7 +3,7 @@ ICS3U Course
 
 ## Plotting a Function
   
-####My project is graphing an expression in the form of a(bx-h)+k. Samples of this can be sin(x), 2sin(4 x -5)+8, sin(x-5), sin(x)-5, and etc. It can be sin, cos or tan. This code can graph expressions. 
+#### My project is graphing an expression in the form of a(bx-h)+k. Samples of this can be sin(x), 2sin(4 x -5)+8, sin(x-5), sin(x)-5, and etc. It can be sin, cos or tan. This code can graph expressions. 
   
   steps to to graph the expression
     1. After running the code
@@ -11,7 +11,7 @@ ICS3U Course
     3. then it will ask for the expression to graph
     4. After entering it it will showcase the graph of the function you inputted.
   
-  ####credits and Appreciation:
+  #### credits and Appreciation:
     libraries used
       •math
       •matplotlib
