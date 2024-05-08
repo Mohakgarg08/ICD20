@@ -154,8 +154,9 @@ while True:
     else:
       print("Invalid Input Please Try Again")
 ```
-  This snippet of code is asking the user to enter what they want to do basic calculation or mathematical operation. After, the program will jump to the function coreesponding to their input. 
-
+  This snippet of code is asking the user to enter what they want to do basic calculation or mathematical operation. After, the program will jump to the function coreesponding to their input.
+   
+##### Area
 ```python
 # This function is for solving the area
 def area():
@@ -252,6 +253,7 @@ def graphing():
 ```
 This snippet of code is asking the user for the **polynomial expression** they want to graph. Then, it asks the user if they have a **linear expression** to graph as well. If **``yes``**, then it will ask the for the **linear expression** and graph both. Otherwise, it will graph the polynomial by it self. 
 
+##### Trignometry 
 ```python
 def trignometry():
     # This is the color for the graph/ User input for favorite color
@@ -349,7 +351,7 @@ This snippet of code is graphing **trigonometric expressions**. First, it asks t
 ```
 This snippet of code is asking the user what they want to graph; **polynomials** or  **trigonometric expressions**. Then, it jumps to the coressponding function.
 
-###### 
+##### Main Menu
 ```python
 def main():
 
