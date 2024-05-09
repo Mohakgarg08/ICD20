@@ -85,23 +85,59 @@ libraries
 ```
 
 Reference
-https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html#matplotlib.pyplot.tight_layout
-https://www.geeksforgeeks.org/plotting-sine-and-cosine-graph-using-matloplib-in-python/
-https://stackoverflow.com/questions/31556446/how-to-draw-axis-in-the-middle-of-the-figure
-https://stackoverflow.com/questions/62160148/in-python-what-does-this-do-tan-y-1np-difftan-y-0
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html#matplotlib.pyplot.tight_layout
+- https://www.geeksforgeeks.org/plotting-sine-and-cosine-graph-using-matloplib-in-python/
+- https://stackoverflow.com/questions/31556446/how-to-draw-axis-in-the-middle-of-the-figure
+- https://stackoverflow.com/questions/62160148/in-python-what-does-this-do-tan-y-1np-difftan-y-0
+- https://www.w3schools.com/python/ref_func_eval.asp
 
 
 #### How the Program Works
-1. import math,cmath, numpy as np & matplotlib.pyplot as plt 
-2. def basic(): This code is defining a function called basic 
-3. def calculation():  This code is defining a function called calculation which is inside of the basic function. This functions is for calculating basic calculations such as addition, subtraction, multiplication, division, power
-4. solve= input("Enter The Expression. This is an example sample is (10+20/5*4**2) "). This code is asking the user for what they what to calculate 
-5. print(f"{solve} = {eval(solve)}"). This code is solving their given calculation using  {eval(solve)}. The print statement is printing the answer to the users calculation
-6. print("Invalid Input Please Try Again"). This line tells the user if its input is invalid and the while True: try and except block helps the user enter the input again. 
-7. def operation(): This function is for mathematical operations such as sin, cos, tan, log, exp, sqrt
-8. def sin(x): return math.sin(x), def cos(x):return math.cos(x), def tan(x): return math.tan(x), def log(x): return math.log(x), def exp(x): return math.exp(x), def sqrt(x):return math.sqrt(x). This block of code is defining functions for the different mathematical operations. 
+``` python
+import math
+import cmath
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+```
+`
+This Snippet of code is used to import libraries that will be used in the program. 
 
-9. 
+
+ ```python
+ # This function is for the basic calculator
+def basic():
+  # This functions is for calculating basic calculations such as addition, subtraction, multiplication, division, power
+  def calculation():
+    while True:
+      try:
+        print("symbols: Add(+), Subtract(-), Multiply(*), Divide(/), Power(**) ")
+        solve= input("Enter The Expression. This is an example sample is (10+20/5*4**2) ")
+        print(f"{solve} = {eval(solve)}")
+        break
+      except:
+        print("Invalid Input Please Try Again")
+ ```
+ This snippet of code is defining the function for the basic calculations. **``def basic():``** This line of code is defining a function called **``basic``** which will consist of two functions inside of it **``calculation``** and **``operation``**. **``def calculation():``** This line of code is defining a function called ``calculation`` which is inside of the ``basic function``. This functions is for ``calculating basic calculations`` ``such as addition, subtraction, multiplication, division, power``. **``solve= input("Enter The Expression")``**. A sample of this is ``(10+20/5*4**2)``. This line of code is asking the user for what they what to calculate. **``print(f"{solve} = {eval(solve)}")``**. This line is solving the given calculation by the user, using ``{eval(solve)}``. The print statement is printing the answer to the users input. **``print("Invalid Input Please Try Again")``**. This line tells the user if its input is invalid and the **``while True:``**, **``try``** and **``except``** line helps the user enter the input again. 
+ 
+##### Basic Calculator
+``` python
+def operation():
+  def sin(x):
+    return math.sin(x)
+  def cos(x):
+    return math.cos(x)
+  def tan(x):
+    return math.tan(x)
+  def log(x):
+    return math.log(x)
+  def exp(x):
+    return math.exp(x)
+  def sqrt(x):
+    return math.sqrt(x)
+``` 
+This snippet of code is defining functions for the different mathematical operations. **``def operation():``** This function is for mathematical operations such as sin, cos, tan, log, exp, sqrt For Example **``def sin(x): return math.sin(x)``** These two lines of code is defining the defining the ``sin`` function ``return math.sin(x)`` the x is the number provided by the user and ``math.sin`` is a function that sin of an given number.
+
 ```python
 while True:
       op= input("What operation do you want to do (Square Root= sqrt, Sin = S, Cos = C,Tan = T, Log = L, Exponential = E: ) ").lower()
@@ -138,9 +174,7 @@ while True:
       else:
         print("Invalid Input Please Try Again")
 ```
-
   **``user = float(input("Give me the number: "))``**. This line is asking the user for the number, they want to solve.  according to their chosen mathematical operation. This snippet of code is solving and retuning answer for that mathematical operation. For example if the user's choice was **``sin``** the user will enter **``s``**. It will verify if ``s`` is a valid input. Then the program will ask for the number you want to solve for. After, providing it the number it will go the the correct path for that function and execute it and return the value to the user. 
-
 
 ```python
 while True:
@@ -154,7 +188,7 @@ while True:
     else:
       print("Invalid Input Please Try Again")
 ```
-  This snippet of code is asking the user to enter what they want to do basic calculation or mathematical operation. After, the program will jump to the function coreesponding to their input.
+This snippet of code is asking the user to enter what they want to do basic calculation or mathematical operation. After, the program will jump to the function coreesponding to their input.
    
 ##### Area
 ```python
@@ -377,3 +411,11 @@ def main():
 main()
 ```
 This snippet of code is the start of the program after running the program. This snippet of code is asking the user what they want to do; **Basic Calculator**, **area calculator**, or **Graphing Calculator**. Acordin to the user choice it will jump to that 
+
+#### How to use my program?
+- Open your Python program and run the script
+- It will ask what the user wants to do basic calculations, finding area, or graphing calculator.
+- Then it will ask you inputs according to your choice of what you wanted to do 
+It will execute the given problem and return the user the answer or the graph.
+
+
