@@ -100,10 +100,10 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 ```
-`
+
 This Snippet of code is used to import libraries that will be used in the program. 
 
-
+##### Basic Calculator
  ```python
  # This function is for the basic calculator
 def basic():
@@ -120,7 +120,7 @@ def basic():
  ```
  This snippet of code is defining the function for the basic calculations. **``def basic():``** This line of code is defining a function called **``basic``** which will consist of two functions inside of it **``calculation``** and **``operation``**. **``def calculation():``** This line of code is defining a function called ``calculation`` which is inside of the ``basic function``. This functions is for ``calculating basic calculations`` ``such as addition, subtraction, multiplication, division, power``. **``solve= input("Enter The Expression")``**. A sample of this is ``(10+20/5*4**2)``. This line of code is asking the user for what they what to calculate. **``print(f"{solve} = {eval(solve)}")``**. This line is solving the given calculation by the user, using ``{eval(solve)}``. The print statement is printing the answer to the users input. **``print("Invalid Input Please Try Again")``**. This line tells the user if its input is invalid and the **``while True:``**, **``try``** and **``except``** line helps the user enter the input again. 
  
-##### Basic Calculator
+
 ``` python
 def operation():
   def sin(x):
