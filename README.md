@@ -140,15 +140,15 @@ def operation():
 This snippet of code is defining functions for the different mathematical operations. **``def operation():``** This function is for mathematical operations such as sin, cos, tan, log, exp, sqrt For Example **``def sin(x): return math.sin(x)``** These two lines of code is defining the defining the ``sin`` function ``return math.sin(x)`` the x is the number provided by the user and ``math.sin`` is a function that sin of an given number.
 
 ```python
-while True:
+    while True:
       op= input("What operation do you want to do (Square Root= sqrt, Sin = S, Cos = C,Tan = T, Log = L, Exponential = E: ) ").lower()
       inputs=["sqrt", "s","c","t","l","e"]
+
       if op in inputs:
 
         # For Sin, Cos, Tan, Log, Exp, sqrt
         while True:
           try:
-
             user = float(input("Give me the number: "))
             if op == "s":
               print(f"The sin of {user} = {sin(user)}")
@@ -172,8 +172,9 @@ while True:
               print("Invalid Input Please Try Again")
           except:
             print("Invalid Input Please Try Again")
-      else:
-        print("Invalid Input Please Try Again")
+        else:
+          print("Invalid Input Please Try Again")
+        break
 ```
   **``user = float(input("Give me the number: "))``**. This line is asking the user for the number, they want to solve.  according to their chosen mathematical operation. This snippet of code is solving and retuning answer for that mathematical operation. For example if the user's choice was **``sin``** the user will enter **``s``**. It will verify if ``s`` is a valid input. Then the program will ask for the number you want to solve for. After, providing it the number it will go the the correct path for that function and execute it and return the value to the user. 
 
@@ -197,7 +198,11 @@ This snippet of code is asking the user to enter what they want to do basic calc
 def area():
   # This function is for asking the user for the dimensions of that shape. This is for the shapes that have one input
   def oneinput(s):
-    return float(input(f"Enter the {s}"))
+    while True:
+      try:
+        return float(input(f"Enter the {s}"))
+      except:
+        print("Invalid Input Please Try Again")
   # This function is for asking the user for the dimensions of that shape. This is for the shapes that have two inputs
   def twoinputs(s1,s2):
     return (oneinput(s1),oneinput(s2))
